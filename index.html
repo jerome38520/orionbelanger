@@ -1815,48 +1815,20 @@
                 L'équipe d'Aimlocation est là pour vous accompagner
             </p>
             
-            <div class="contact-form">
-                <form action="https://jerlebris.app.n8n.cloud/webhook/89b3c93f-4db9-444e-a8c8-4c2849ebcd92" method="POST">
-                    <div class="form-group">
-                        <label for="name">Nom complet</label>
-                        <input type="text" id="name" name="name" required placeholder="Jean Dupont">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Courriel</label>
-                        <input type="email" id="email" name="email" required placeholder="jean.dupont@email.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Téléphone</label>
-                        <input type="tel" id="phone" name="phone" placeholder="(514) 123-4567">
-                    </div>
-                    <div class="form-group">
-                        <label for="unit">Type d'unité souhaité</label>
-                        <select id="unit" name="unit" required>
-                            <option value="">Sélectionnez une option</option>
-                            <option value="studio">Studio</option>
-                            <option value="3.5">3 ½</option>
-                            <option value="4.5">4 ½</option>
-                            <option value="5.5">5 ½</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="move-date">Quand pensez-vous déménager ?</label>
-                        <select id="move-date" name="move-date" required>
-                            <option value="">Sélectionnez une option</option>
-                            <option value="moins-1-mois">Moins de 1 mois</option>
-                            <option value="1-2-mois">Dans 1 à 2 mois</option>
-                            <option value="3-4-mois">Dans 3 à 4 mois</option>
-                            <option value="5-6-mois">Dans 5 à 6 mois</option>
-                            <option value="plus-6-mois">Dans plus de 6 mois</option>
-                            <option value="ne-sais-pas">Je ne sais pas</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" placeholder="Écrivez votre message ici..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-submit">Envoyer ma demande</button>
-                </form>
+            <!-- ✅ FORMULAIRE TALLY INTÉGRÉ -->
+            <!-- 👉 REMPLACE "XXXXXX" dans le lien src ci-dessous par ton vrai ID Tally -->
+            <!-- Exemple : https://tally.so/embed/wgZ8dA?alignLeft=1&hideTitle=1&transparentBackground=1 -->
+            <div class="contact-form" style="padding: 0; background: transparent; box-shadow: none;">
+                <iframe 
+                    data-tally-src="https://tally.so/embed/GxzlOk?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                    loading="lazy" 
+                    width="100%" 
+                    height="600" 
+                    frameborder="0" 
+                    marginheight="0" 
+                    marginwidth="0" 
+                    title="Demande de visite – Orion Rosemont">
+                </iframe>
             </div>
         </div>
     </section>
@@ -1910,5 +1882,8 @@
         });
     });
     </script>
+    <!-- ✅ Script Tally - NE PAS SUPPRIMER - nécessaire pour l'ajustement automatique de la hauteur du formulaire -->
+    <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+
 </body>
 </html>
