@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+    <!-- Orion — version 2026-09-10-B (carte promo allégée, conditions repliables) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orion - Vivez Villeray à son meilleur</title>
@@ -133,14 +134,14 @@
             top: 50%;
             transform: translateY(-50%);
             z-index: 15;
-            width: 384px;
+            width: 352px;
         }
 
         .hero-promo-carte {
             position: relative;
             background: rgba(255, 255, 255, 0.97);
             border-radius: 18px;
-            padding: 32px 28px 24px;
+            padding: 26px 24px 20px;
             box-shadow: 0 20px 55px rgba(0, 0, 0, 0.3);
             text-align: center;
             overflow: hidden;
@@ -160,20 +161,20 @@
             display: inline-block;
             background: #7BA888;
             color: #ffffff;
-            font-size: 12px;
+            font-size: 11px;
             font-weight: 800;
             letter-spacing: 1.6px;
             text-transform: uppercase;
-            padding: 7px 18px;
+            padding: 6px 15px;
             border-radius: 50px;
-            margin-bottom: 16px;
+            margin-bottom: 13px;
         }
 
         .hero-promo-eyebrow {
-            font-size: 15px;
+            font-size: 14px;
             font-weight: 700;
             color: #777;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .hero-promo-prix {
@@ -186,14 +187,14 @@
         }
 
         .hero-promo-avant {
-            font-size: 21px;
+            font-size: 20px;
             font-weight: 600;
             color: #b3b3b3;
             text-decoration: line-through;
         }
 
         .hero-promo-apres {
-            font-size: 50px;
+            font-size: 46px;
             font-weight: 900;
             color: #7BA888;
             line-height: 1;
@@ -201,36 +202,43 @@
         }
 
         .hero-promo-mois {
-            font-size: 17px;
+            font-size: 16px;
             font-weight: 600;
             color: #888;
         }
 
         .hero-promo-jusqua {
-            font-size: 18px;
+            font-size: 17px;
             font-weight: 700;
             color: #333;
-            margin-bottom: 18px;
+            margin-bottom: 14px;
         }
 
         .hero-promo-pastille {
             display: inline-block;
             background: rgba(123, 168, 136, 0.15);
             color: #55806a;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 700;
-            padding: 9px 20px;
+            padding: 8px 17px;
             border-radius: 50px;
         }
 
-        .hero-promo-conditions {
-            margin-top: 18px;
-            padding-top: 14px;
+        .hero-promo-carte .offre-details {
+            margin: 16px 0 0;
+            padding-top: 13px;
             border-top: 1px solid #eef3f0;
-            font-size: 11.5px;
-            line-height: 1.5;
-            color: #9a9a9a;
-            text-align: center;
+        }
+
+        .hero-promo-carte .offre-details summary {
+            font-size: 12.5px;
+        }
+
+        .hero-promo-carte .offre-details p {
+            text-align: left;
+            font-size: 12px;
+            max-width: none;
+            margin-top: 10px;
         }
 
         .hero-text-overlay {
@@ -1614,11 +1622,11 @@
 
 
         /* Détails de l'offre (repliable) */
-        .studio-offre {
+        .offre-details {
             margin-bottom: 22px;
         }
 
-        .studio-offre summary {
+        .offre-details summary {
             display: inline-flex;
             align-items: center;
             gap: 8px;
@@ -1631,11 +1639,11 @@
             user-select: none;
         }
 
-        .studio-offre summary::-webkit-details-marker {
+        .offre-details summary::-webkit-details-marker {
             display: none;
         }
 
-        .studio-offre summary::before {
+        .offre-details summary::before {
             content: 'i';
             display: inline-flex;
             align-items: center;
@@ -1652,15 +1660,15 @@
             line-height: 1;
         }
 
-        .studio-offre summary:hover {
+        .offre-details summary:hover {
             text-decoration: underline;
         }
 
-        .studio-offre[open] summary {
+        .offre-details[open] summary {
             margin-bottom: 4px;
         }
 
-        .studio-offre p {
+        .offre-details p {
             margin-top: 8px;
             padding: 13px 16px;
             background: #f6faf7;
@@ -1762,7 +1770,7 @@
                 position: static;
                 transform: none;
                 width: 100%;
-                max-width: 380px;
+                max-width: 344px;
                 margin: 0 auto 20px;
             }
 
@@ -1774,11 +1782,27 @@
             }
 
             .hero-promo-apres {
-                font-size: 42px;
+                font-size: 38px;
             }
 
             .hero-promo-carte {
-                padding: 26px 22px 20px;
+                padding: 20px 18px 16px;
+            }
+
+            .hero-promo-ruban {
+                font-size: 10.5px;
+                padding: 5px 13px;
+                margin-bottom: 11px;
+            }
+
+            .hero-promo-jusqua {
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+
+            .hero-promo-carte .offre-details {
+                margin-top: 13px;
+                padding-top: 11px;
             }
         }
 
@@ -2033,7 +2057,10 @@
                 </div>
                 <div class="hero-promo-jusqua">bail jusqu'au 30 juin 2028</div>
                 <div class="hero-promo-pastille">2 mois de loyer offerts</div>
-                <p class="hero-promo-conditions">Sur la base d'un bail signé à 1 775 $ par mois : deux mois de loyer offerts, répartis sur toute la durée du bail jusqu'au 30 juin 2028.</p>
+                <details class="offre-details">
+                    <summary>Détails de l'offre</summary>
+                    <p>Sur la base d'un bail signé à 1 775 $ par mois : deux mois de loyer offerts, répartis sur toute la durée du bail jusqu'au 30 juin 2028.</p>
+                </details>
             </div>
         </div>
         <div class="hero-text-overlay">
@@ -2331,7 +2358,7 @@
                 <div class="studio-dispo-prix">1 395 $ <span>/ mois</span></div>
                 <div class="studio-dispo-note">bail jusqu'au 30 juin 2028</div>
                 <div class="studio-dispo-inclus"><strong>Tout inclus</strong> · meublé, hydro et internet</div>
-                <details class="studio-offre">
+                <details class="offre-details">
                     <summary>Détails de l'offre</summary>
                     <p>Sur la base d'un bail signé à 1 575 $ par mois : rabais de 180 $ par mois jusqu'au 30 juin 2028, soit l'équivalent de plus de deux mois de loyer offerts.</p>
                 </details>
