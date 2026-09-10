@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- Orion — version 2026-09-10-H (galerie sans légendes) -->
+    <!-- Orion — version 2026-09-10-I (correctif : la fenêtre promo bloquait tous les clics) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orion - Vivez Villeray à son meilleur</title>
@@ -1873,6 +1873,11 @@
             align-items: center;
             justify-content: center;
             padding: 20px;
+        }
+
+        /* l'attribut hidden doit l'emporter sur display: flex */
+        .promo-modale[hidden] {
+            display: none;
         }
 
         .promo-modale-fond {
