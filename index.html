@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- Orion — version 2026-09-10-I (correctif : la fenêtre promo bloquait tous les clics) -->
+    <!-- Orion — version 2026-09-10-J (carte Google : verrou du cadre + non tactile sur mobile) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orion - Vivez Villeray à son meilleur</title>
@@ -2050,6 +2050,13 @@
                 height: 400px;
             }
 
+            /* sur téléphone la carte est affichée mais non tactile : évite le piège de défilement
+               et les liens de Google (« Ouvrir dans Maps », itinéraire) qui font quitter la page.
+               L'itinéraire reste accessible par notre bouton « Obtenir l'itinéraire ». */
+            .map-container-styled iframe {
+                pointer-events: none;
+            }
+
             .hero-text-overlay {
                 left: 20px;
                 right: 20px;
@@ -2607,7 +2614,8 @@
                         style="border:0;"
                         allowfullscreen=""
                         loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
+                        referrerpolicy="no-referrer-when-downgrade"
+                        sandbox="allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox allow-forms">
                     </iframe>
                 </div>
             </div>
