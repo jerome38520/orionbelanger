@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- Orion — version 2026-09-10-K (espaces communs : nouvelle photo du hall d'entrée) -->
+    <!-- Orion — version 2026-09-10-L (menu : lien « Nos offres » vers la page des promotions) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orion - Vivez Villeray à son meilleur</title>
@@ -1696,6 +1696,24 @@
             border-bottom-color: #7BA888;
         }
 
+        /* lien « Nos offres » vers la page des promotions (page externe) */
+        .site-nav a.nav-offres {
+            color: #4e8b62;
+            border-bottom-color: rgba(78, 139, 98, 0.35);
+        }
+
+        .site-nav a.nav-offres::after {
+            content: "\2197";
+            font-size: 0.8em;
+            margin-left: 4px;
+            opacity: 0.75;
+        }
+
+        .site-nav a.nav-offres:hover {
+            color: #2f6b48;
+            border-bottom-color: #2f6b48;
+        }
+
         /* les ancres ne doivent pas passer sous l'en-tete fixe */
         section[id] {
             scroll-margin-top: 185px;
@@ -2257,6 +2275,7 @@
                     <div class="tagline">L'équilibre parfait entre design urbain et vie de quartier</div>
                 </div>
                 <nav class="site-nav">
+                    <a href="https://orionplansetpromotions.netlify.app/#offres" target="_blank" rel="noopener" class="nav-offres">Nos offres</a>
                     <a href="#disponibilites">Nos 3 ½ disponibles</a>
                     <a href="#visites-3d">Visites 3D</a>
                     <a href="#inclusions">Inclusions et commodités</a>
