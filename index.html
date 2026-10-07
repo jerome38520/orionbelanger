@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <!-- Orion — version 2026-10-07-A (option 2 : nouveaux loyers des 3 ½, plus aucune promotion, studio retiré) -->
+    <!-- Orion — version 2026-10-07-B (option 2 : nouveaux loyers des 3 ½, plus aucune promotion, studio retiré; correctif chevauchement du badge) -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orion - Vivez Villeray à son meilleur</title>
@@ -1960,6 +1960,10 @@
 
         .hero-badge:hover .hero-badge-lien {
             color: #7BA888;
+        }
+        /* 2026-10-07 : le badge ne doit jamais chevaucher le cadre « 30 unités » (écrans peu hauts / zoom) */
+        .hero {
+            min-height: max(80vh, 580px);
         }
         /* Le héros s'empile sous 900 px */
         @media (max-width: 900px) {
